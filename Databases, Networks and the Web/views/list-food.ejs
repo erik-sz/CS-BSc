@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Caloriebuddy | List page</title>
+ </head>
+ <body>
+    <!-- this block of code creates the navigation bar, R6B -->
+    <div class="topnav">
+        <a href="./">Home</a>
+        <a class="active" href="./list-food">List-food</a>
+        <a href="./add-food">Add-food</a>
+        <a href="./search-food">Search-food</a>
+        <a href="./update-food">Update-food</a>
+        <a href="./about">About</a>
+    </div>
+    
+    <h1> This is List-food page </h1>
+    <!-- this javascript code sorts the records by name -->
+    <%
+        ingridients.sort(function(a,b){
+            var x = a.name;
+            var y = b.name;
+            if (x < y) {return -1;}
+            if (x > y) {return 1;}
+            return 0;
+        });
+    %>
+    
+    <!-- this block of code creates a list of all the records by looping through them, and writes out the values of all of the object properties -->
+    <ul>
+        <% ingridients.forEach(function(ingridients){ %>
+        <li>100g of <%= ingridients.name %> has: <%= ingridients.calorie %> kilocalorie, 
+            <%= ingridients.protein %> g of protein, <%= ingridients.fat %> g of fat, 
+            <%= ingridients.carbs %> g of carbohydrates, <%= ingridients.sugar %> g of sugar,
+            <%= ingridients.fiber %> g of fiber
+        </li>
+        <% }) %>
+    </ul>
+
+ </body>
+</html>
