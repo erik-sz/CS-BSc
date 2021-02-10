@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Gép: 127.0.0.1
+-- Létrehozás ideje: 2020. Júl 31. 01:38
+-- Kiszolgáló verziója: 10.4.13-MariaDB
+-- PHP verzió: 7.2.32
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Adatbázis: `caloriebuddy`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `ingridients`
+--
+
+CREATE TABLE `ingridients` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `calorie` decimal(5,2) UNSIGNED DEFAULT NULL,
+  `protein` decimal(5,2) UNSIGNED DEFAULT NULL,
+  `fat` decimal(5,2) UNSIGNED DEFAULT NULL,
+  `carbs` decimal(5,2) UNSIGNED DEFAULT NULL,
+  `sugar` decimal(5,2) UNSIGNED DEFAULT NULL,
+  `fiber` decimal(5,2) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- A tábla adatainak kiíratása `ingridients`
+--
+
+INSERT INTO `ingridients` (`id`, `name`, `calorie`, `protein`, `fat`, `carbs`, `sugar`, `fiber`) VALUES
+(1, 'Potato', '87.00', '1.90', '20.00', '21.00', '98.00', '5.00'),
+(5, 'Rice', '130.00', '2.36', '0.19', '20.10', '0.00', '1.60'),
+(6, 'Bread', '264.00', '9.00', '3.20', '49.00', '5.00', '2.70'),
+(7, 'Onion', '39.00', '1.10', '0.10', '9.00', '4.20', '1.70'),
+(8, 'Avocado', '160.00', '2.00', '15.00', '9.00', '0.70', '7.00'),
+(9, 'Iceber Lettuce', '13.00', '0.90', '0.10', '3.00', '2.00', '1.20');
+
+--
+-- Indexek a kiírt táblákhoz
+--
+
+--
+-- A tábla indexei `ingridients`
+--
+ALTER TABLE `ingridients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A kiírt táblák AUTO_INCREMENT értéke
+--
+
+--
+-- AUTO_INCREMENT a táblához `ingridients`
+--
+ALTER TABLE `ingridients`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
