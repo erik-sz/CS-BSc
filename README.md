@@ -1,6 +1,8 @@
+<img src="asset/UoL logo.gif" width="100">
+
 # Computer Science BSc
 
-#### This repository containes various topics that we covered throughout the Computer Science course at University of London.
+#### This repository containes various projects that we created throughout the Computer Science course at University of London.
 #### I started the course in april 2019 and it is still in progress.
 More information about the course can be found [here][1] at the school's official website.
 
