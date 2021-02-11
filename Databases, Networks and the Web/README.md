@@ -15,4 +15,4 @@ In the module we have learned how to model data in a database, retrieve data fro
 
 
 #### Code description
-The code is a webapplication called "Calorie buddie". It is written to run it on a server with a MySQL database together, therefore it will not function just by itself. The app is very simple presentation of creating a server which answers to the requests of our web browser by sending back an HTML file with data 
+The code represents a webapplication called "Calorie buddie". It is written to run on a server with a MySQL database together. The app is a very simple presentation of creating a server which answers to requests to perfortm various tasks on the database such as adding, deleting, retrieving and modifying data with query strings in JavaScript.
