@@ -12,3 +12,7 @@ In the module we have learned how to model data in a database, retrieve data fro
 * Representing data in a database pt 2 
 * Revision of HTML and CSS 
 * Building a dynamic website
+
+
+#### Code description
+The code is a webapplication called "Calorie buddie". It is written to run it on a server with a MySQL database together, therefore it will not function just by itself. The app is very simple presentation of creating a server which answers to the requests of our web browser by sending back an HTML file with data 
