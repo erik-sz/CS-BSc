@@ -1,7 +1,3 @@
-// npm init
-// Need to add mocha: npm add mocha
-// 
-
 var assert = require('assert');
 
 describe("Set of tests", function(){
